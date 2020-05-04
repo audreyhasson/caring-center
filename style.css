@@ -1,25 +1,77 @@
 /* Style Guide
-dark purple: #210151
+dark purple: #354356
 light blue: #c6d7ea
-dark blue: #507297
+dark blue: #7AAFB1
 */
 
 /* Main Styling */
+:root {
+  --dark-blue: #354356;
+  --white-blue: #c6d7ea;
+  --light-blue: #7AAFB1;
+}
 body {
-  background-color: #c6d7ea;
+  background-color: var(--white-blue);
   font-family: 'EB Garamond', serif;
 }
 
 h1 {
   font-size: 36px;
   font-weight: normal;
-  color: #210151;
+  color: var(--dark-blue);
   text-align: center;
   font-family: 'EB Garamond', serif;
 }
 
 html, body {
   margin: 0;
+  height: 100%;
+  display: grid;
+}
+
+p {
+  font-size: 18px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+ul {
+  font-size: 18px;
+  list-style-type: circle;
+}
+
+a {
+  color: var(--dark-blue);
+}
+
+footer {
+  background-color: var(--dark-blue);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+footer ul, footer a {
+  list-style-type: none;
+  display: flex;
+  color: #fff;
+  align-self: center;
+}
+
+footer ul {
+  float: right;
+}
+
+footer li {
+  padding: 10px;
 }
 
 /* header */
@@ -28,7 +80,7 @@ header {
 }
 
 header p {
-  color: #210151;
+  color: #354356;
   font-size: 18px;
   text-align: center;
   background-color: #c6d7ea;
@@ -54,7 +106,7 @@ header p {
 }
 
 header hr {
-  border: 6px solid #210151;
+  border: 6px solid #354356;
   margin-top: -60px;
 }
 
@@ -62,7 +114,7 @@ header hr {
 .nav ul {
   list-style: none;
   display: flex;
-  color: #210151;
+  color: #354356;
   padding: 0;
 }
 
@@ -82,7 +134,7 @@ header hr {
 
 .nav li a {
   text-decoration: none;
-  color: #210151;
+  color: #354356;
 }
 
 .nav .active {
@@ -90,7 +142,7 @@ header hr {
 }
 /* Home Page */
 .blurb-container {
-  background-color: #507297;
+  background-color: #7AAFB1;
   height: 250px;
   display: flex;
 }
@@ -143,4 +195,30 @@ header hr {
   float: right;
   width: 200px;
   font-size: 18px;
+}
+
+.main-container {
+  width: 1000px;
+  margin: auto;
+}
+
+.h-left {
+  width: 600px;
+  float: left;
+}
+
+.h-right {
+  width: 300px;
+  float: right;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--light-blue);
+}
+
+.h-right h3 {
+  font-size: 20px;
+}
+
+.about-blurb {
+
 }
